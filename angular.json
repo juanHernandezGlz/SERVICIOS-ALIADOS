@@ -37,7 +37,7 @@
           },
           "configurations": {
             "production": {
-              "baseHref": "/NUEVO-PORTAL-S-ALIADOS/",
+              "baseHref": "/SERVICIOS-ALIADOS/",
               "budgets": [
                 {
                   "type": "initial",
