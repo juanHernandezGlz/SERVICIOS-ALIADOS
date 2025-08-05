@@ -37,6 +37,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/NUEVO-PORTAL-S-ALIADOS/",
               "budgets": [
                 {
                   "type": "initial",
