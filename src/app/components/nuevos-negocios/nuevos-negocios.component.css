@@ -3,21 +3,26 @@ iframe {
     height: 80vh;
     border-radius: 8px;
     border: none;
-  }
+}
   
-  h1 {
+h1 {
     color: black;
     font-weight: bold;
-  }
+}
   
-  .sidebar-custom {
+.sidebar-custom {
     padding: 10px;
     max-width: 100%;
     overflow-wrap: break-word;
     word-wrap: break-word;
-  }
+
+    position: sticky;
+  top: 80px; /* Ajusta según el alto de tu navbar */
+  align-self: flex-start;
+  height: max-content;
+}
   
-  .list-group-item {
+.list-group-item {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -32,38 +37,38 @@ iframe {
     white-space: normal;
     overflow-wrap: break-word;
     text-align: left;
-  }
+}
   
-  .list-group-item:hover {
+.list-group-item:hover {
     background-color: #d6e9f9;
     color: #000;
     cursor: pointer;
-  }
+}
   
-  .list-text {
+.list-text {
     flex: 1;
     white-space: normal;
     overflow-wrap: break-word;
-  }
+}
   
-  .accordion-button:not(.collapsed) {
+.accordion-button:not(.collapsed) {
     background-color: #333;
     color: #fff;
-  }
+}
   
-  .accordion-button {
+.accordion-button {
     font-size: 15px;
     white-space: normal;
-  }
+}
   
-  .accordion-body .list-group-item {
+.accordion-body .list-group-item {
     background-color: #555;
-  }
+}
   
-  .accordion-body .list-group-item:hover {
+.accordion-body .list-group-item:hover {
     background-color: #d6e9f9;
     color: #000;
-  }
+}
   
   .accordion-button,
   .accordion-body,
@@ -74,12 +79,13 @@ iframe {
     text-align: left;
   }
   
-  .accordion-button::after {
+.accordion-button::after {
     margin-left: auto;
-  }
+}
   
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .sidebar-custom {
+      position: static;
       border-right: none;
       border-bottom: 1px solid #ccc;
       text-align: center;
@@ -93,5 +99,5 @@ iframe {
     .accordion-button {
       font-size: 14px;
     }
-  }
+}
   
