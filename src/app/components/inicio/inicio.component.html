@@ -1,0 +1,23 @@
+<main>
+    <div class="container mt-4 text-center">
+        <h1>Bienvenido!</h1>
+
+        <!-- Widget flotante de Clima -->
+        <div *ngIf="weatherData" class="weather-inline card mx-auto my-4 p-3 shadow text-center">
+            <strong class="mb-2 d-block">
+                <i class="fas fa-cloud-sun text-primary"></i> Clima en {{ ciudad }}
+            </strong>
+            <div class="weather-details">
+                <span>🌡️ {{ weatherData.main.temp }} °C</span>
+                <span>💧 {{ weatherData.main.humidity }}%</span>
+                <span>🌬️ {{ weatherData.wind.speed }} km/h</span>
+                <span>{{ weatherData.weather[0].description }}</span>
+            </div>
+        </div>
+        
+
+        <div>
+            <img src="img/Bienvenidos1.jpeg" alt="" class="img-fluid mt-3">
+        </div>
+    </div>
+</main>
