@@ -17,9 +17,9 @@ h1 {
     word-wrap: break-word;
 
     position: sticky;
-  top: 80px; /* Ajusta según el alto de tu navbar */
-  align-self: flex-start;
-  height: max-content;
+    top: 80px; /* Ajusta según el alto de tu navbar */
+    align-self: flex-start;
+    height: max-content;
 }
   
 .list-group-item {

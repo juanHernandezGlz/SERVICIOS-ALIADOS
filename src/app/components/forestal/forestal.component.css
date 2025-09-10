@@ -7,7 +7,14 @@ iframe {
 
 .sidebar-custom {
     padding: 10px;
-}
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    position: sticky;
+    top: 80px; /* Ajusta según el alto de tu navbar */
+    align-self: flex-start;
+    height: max-content;}
 
 .list-group-item {
     padding: 8px 12px;
