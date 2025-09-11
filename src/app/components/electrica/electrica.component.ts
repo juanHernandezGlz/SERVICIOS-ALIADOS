@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './electrica.component.css'
 })
 export class ElectricaComponent {
-
+  scrollToSection(id: string) {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }
