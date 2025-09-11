@@ -25,16 +25,16 @@ export class LoginComponent {
       //REDIRIGIMOS SEGUN ROL
       switch(role){
         case 'admin':
-          this.router.navigate(['/inicio']);
+          this.router.navigate(['/inicio'], {replaceUrl: true});
           break;
         case 'forestal':
-          this.router.navigate(['/inicio']);
+          this.router.navigate(['/inicio'], {replaceUrl: true});
           break;
         case 'nuevos':
-          this.router.navigate(['/inicio']);
+          this.router.navigate(['/inicio'], {replaceUrl: true});
           break;
         case 'electrica':
-          this.router.navigate(['/inicio']);
+          this.router.navigate(['/inicio'], {replaceUrl: true});
           break;
       }
     }else{

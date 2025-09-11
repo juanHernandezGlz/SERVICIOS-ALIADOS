@@ -16,6 +16,12 @@ export const authGuard: CanActivateFn = (route, state) => {
     return false;
   }
 
+  //EVITAR ACCESO AL LOGI SI YA ESTÁ AUTENTICADO
+  if(state.url === '/login'){
+    router.navigate(['/inicio'],{replaceUrl: true});
+    return false;
+  }
+
   //SI LA RUTA REQUIERE ROLES ESPECIFICOS
   const expectedRoles = route.data?.['roles'] as string[];
   if(expectedRoles && !expectedRoles.includes(user.role)){

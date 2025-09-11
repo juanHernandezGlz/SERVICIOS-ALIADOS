@@ -41,7 +41,7 @@ export class AuthService {
       localStorage.setItem('expire_at', expireAt.toString());
 
       //BLOQUEO DEL BOTON ATRAS
-      this.starPreventBack();
+      this.startPreventBack();
       return true;
     }
     return false
@@ -49,6 +49,7 @@ export class AuthService {
 
   logout(){
     localStorage.removeItem(this.userKey);
+    localStorage.removeItem('expire_at');
     this.stopPreventBack();
     this.router.navigate(['/login'], {replaceUrl: true});
   }
@@ -74,7 +75,7 @@ export class AuthService {
 
   //EVITAR RETROCEDER: LLAMADAS IDEMPOTENTES
 
-  starPreventBack(){
+  startPreventBack(){
     try{
       history.pushState(null, '', location.href);
       window.addEventListener('popstate', this.backNavigationHandler);

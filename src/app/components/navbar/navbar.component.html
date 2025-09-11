@@ -60,9 +60,18 @@
       <ul class="navbar-nav ms-auto">
         <!-- Botón Cerrar sesión -->
         <li class="nav-item">
-          <a class="nav-link" role="button" (click)="logout()" id="logout">Cerrar sesión</a>
+          <a class="nav-link" role="button" (click)="openModal()" id="logout">Cerrar sesión</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+<app-confirm-modal 
+  #logoutModal
+  [title]="'Confirmar Cierre de Sesión'"
+  [message]="'¿Estás seguro que deseas cerrar sesión?'"
+  [confirmText]="'Sí, Cerrar Sesión'"
+  [cancelText]="'Cancelar'"
+  (onConfirm)="authService.logout()">
+
+</app-confirm-modal>
