@@ -6,6 +6,7 @@ import { ElectricaComponent } from './components/electrica/electrica.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { authGuard } from './guards/auth.guard';
 import { LoginComponent } from './components/login/login.component';
+import { AdministracionComponent } from './components/administracion/administracion.component';
 
 export const routes: Routes = [
     // {path: 'nuevo-negocios', component:NuevosNegociosComponent},
@@ -29,6 +30,7 @@ export const routes: Routes = [
     {path: 'nuevos-negocios', component: NuevosNegociosComponent, canActivate: [authGuard], data: {roles: ['admin', 'nuevos']}},
     {path: 'forestal', component: ForestalComponent, canActivate: [authGuard], data: {roles: ['admin', 'forestal']}},
     {path: 'electrica', component: ElectricaComponent, canActivate: [authGuard], data: {roles: ['admin', 'electrica']}},
+    {path: 'admin', component: AdministracionComponent, canActivate: [authGuard], data: {roles: ['admin']}},
 
     //REDIRECCIONES
     {path: '', redirectTo: 'inicio', pathMatch: 'full'},

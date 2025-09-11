@@ -47,6 +47,14 @@
           </ul> dropdown-toggle -->
         </li>
 
+        <li class="nav-item dropdown" *ngIf="authService.hasRole(['admin'])">
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" [routerLink]="'admin'" routerLinkActive="active">
+            Administración
+          </a>
+          <!-- <ul class="dropdown-menu" style="background-color: #82877e;">
+            <li><a class="dropdown-item" [routerLink]="'admin'" routerLinkActive="active">Administración</a></li>
+          </ul> -->
+        </li>
 
       </ul>
       <ul class="navbar-nav ms-auto">

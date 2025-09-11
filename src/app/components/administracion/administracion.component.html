@@ -1,0 +1,71 @@
+<div class="container-fluid mt-3">
+    <div class="row">
+        <!-- Menú lateral -->
+        <nav class="col-12 col-md-2 sidebar-custom mb-3 mb-md-0">
+            <h4 class="text-center text-md-start">Secciones</h4>
+        
+            <div class="accordion" id="accordionNuevosNegocios">
+        
+                <!-- CONECTIVIDAD Y REDES -->
+                <div class="accordion-item bg-dark text-white">
+                    <h2 class="accordion-header" id="headingOperaciones">
+                        <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOperaciones" aria-expanded="false" aria-controls="collapseOperaciones">
+                            <i class="bi bi-lightning-charge-fill me-2"></i>GESTION ADMINISTRATIVA
+                        </button>
+                    </h2>
+                    <div id="collapseOperaciones" class="accordion-collapse collapse" aria-labelledby="headingOperaciones"
+                        data-bs-parent="#accordionNuevosNegocios">
+                        <div class="accordion-body p-0">
+                            <a class="list-group-item list-group-item-action" (click)="scrollToSection('operaciones-electricas')">GESTION</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- OBRAS ELECTRICAS -->
+                <div class="accordion-item bg-dark text-white">
+                    <h2 class="accordion-header" id="headingConectividad">
+                        <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseConectividad" aria-expanded="false" aria-controls="collapseConectividad">
+                            <i class="bi bi-hdd-network me-2"></i>ESTADO RESULTADO
+                        </button>
+                    </h2>
+                    <div id="collapseConectividad" class="accordion-collapse collapse" aria-labelledby="headingConectividad"
+                        data-bs-parent="#accordionNuevosNegocios">
+                        <div class="accordion-body p-0">
+                            <a class="list-group-item list-group-item-action"
+                                (click)="scrollToSection('mantenciones-emergencia')">EERR GENERAL</a>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </nav>
+
+        <!-- Contenido principal -->
+        <div class="col-12 col-md-10 p-3">
+            <h2>ADMINISTRACION</h2>
+            <p>
+              
+            </p>
+
+            <hr>
+            <div id="operaciones-electricas">
+                <h4>GESTIÓN</h4>
+                <P></P>
+                <div>
+                    <iframe title="ADMINISTRACION - PUBLICAR" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiNDgyNDgyNzItM2Q5Yi00OTVhLTkyNGItZjg5NjljZTg5NDY0IiwidCI6IjAxZjA0NDcwLWQ2MzItNGNhOC05MWQ3LTVhZWIxY2VlYjBkNCIsImMiOjR9&pageName=ReportSection5b81c74239583d0c8e29" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+            </div>
+            <hr>
+            <div id="mantenciones-emergencia">
+                <h4>EERR GENERAL</h4>
+                <P></P>
+                <div>
+                    <iframe title="OBRA ELECTRICA (DESCONEXION)- PUBLICAR" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiN2UxMzYyNjMtZTM4YS00ZWNiLWE1M2YtNDRlMmNiZDgyNTQxIiwidCI6IjcwNTlmM2M3LTNkMGUtNDA0OS1iMWNjLTBkMWVhYTg4NTljNCIsImMiOjl9&pageName=097fe97571070d6497bc" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</div>
