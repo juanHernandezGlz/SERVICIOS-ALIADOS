@@ -24,7 +24,7 @@
 }
 
 .navbar .nav-link:hover{
-    color: #f1f1f1;
+    color: #F28705;
 }
 
 .dropdown-submenu {
@@ -45,11 +45,17 @@
 }
 
 .dropdown-item:hover {
-    background-color: #555555;
+    background-color: #F28705;
     color: white;
 }
 
 .navbar .navbar-toggler {
-    background-color: #444444;
+    background-color: #F28705;
+}
+
+#logout{
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: red;
 }
 

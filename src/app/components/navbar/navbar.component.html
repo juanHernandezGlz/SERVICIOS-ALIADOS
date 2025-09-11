@@ -21,38 +21,39 @@
 
         <!-- Dropdown Áreas según rol -->
         <li class="nav-item dropdown" *ngIf="authService.hasRole(['admin','nuevos'])">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"[routerLink]="'nuevos-negocios'" routerLinkActive="active" >
             Nuevos Negocios
           </a>
-          <ul class="dropdown-menu" style="background-color: #82877e;">
+          <!-- <ul class="dropdown-menu" style="background-color: #82877e;">
             <li><a class="dropdown-item" [routerLink]="'nuevos-negocios'" routerLinkActive="active">Nuevo Negocios</a></li>
-          </ul>
+          </ul> -->
         </li>
 
         <li class="nav-item dropdown" *ngIf="authService.hasRole(['admin','electrica'])">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" [routerLink]="'electrica'" routerLinkActive="active">
             Eléctrica
           </a>
-          <ul class="dropdown-menu" style="background-color: #82877e;">
+          <!-- <ul class="dropdown-menu" style="background-color: #82877e;">
             <li><a class="dropdown-item" [routerLink]="'electrica'" routerLinkActive="active">Eléctrica</a></li>
-          </ul>
+          </ul> -->
         </li>
 
         <li class="nav-item dropdown" *ngIf="authService.hasRole(['admin','forestal'])">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" [routerLink]="'forestal'" routerLinkActive="active">
             Forestal
           </a>
-          <ul class="dropdown-menu" style="background-color: #82877e;">
+          <!-- <ul class="dropdown-menu" style="background-color: #82877e;">
             <li><a class="dropdown-item" [routerLink]="'forestal'" routerLinkActive="active">Forestal</a></li>
-          </ul>
+          </ul> dropdown-toggle -->
         </li>
 
+
+      </ul>
+      <ul class="navbar-nav ms-auto">
         <!-- Botón Cerrar sesión -->
-
         <li class="nav-item">
-          <a class="nav-link" (click)="logout()">Cerrar sesión</a>
+          <a class="nav-link" role="button" (click)="logout()" id="logout">Cerrar sesión</a>
         </li>
-
       </ul>
     </div>
   </div>

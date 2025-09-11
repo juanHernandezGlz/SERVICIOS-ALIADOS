@@ -28,13 +28,13 @@ export class LoginComponent {
           this.router.navigate(['/inicio']);
           break;
         case 'forestal':
-          this.router.navigate(['/forestal']);
+          this.router.navigate(['/inicio']);
           break;
         case 'nuevos':
-          this.router.navigate(['/nuevos-negocios']);
+          this.router.navigate(['/inicio']);
           break;
         case 'electrica':
-          this.router.navigate(['/electrica']);
+          this.router.navigate(['/inicio']);
           break;
       }
     }else{
