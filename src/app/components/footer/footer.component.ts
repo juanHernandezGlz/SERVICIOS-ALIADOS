@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -12,6 +12,7 @@ export class FooterComponent {
 
   isButtonVisible = false;
 
+  @HostListener('window:scroll', [])
   onWindowScroll(){
     this.isButtonVisible = window.scrollY > 100;
   }

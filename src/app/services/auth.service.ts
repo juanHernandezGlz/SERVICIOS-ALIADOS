@@ -16,7 +16,7 @@ interface User {
 export class AuthService {
 
   private users: User[] = [
-    {username: 'admin', password: 'saliados', role: 'admin'},
+    {username: 'aliados', password: 'aliados2025', role: 'admin'},
     {username: 'forestal', password: 'forestal2025', role: 'forestal'},
     {username: 'nuevos', password: 'nuevosnegocios2025', role: 'nuevos'},
     {username: 'electrica', password: 'electrica2025', role: 'electrica'}
@@ -34,7 +34,7 @@ export class AuthService {
   login(username: string, pasword: string): boolean {
     const user = this.users.find(u => u.username === username && u.password === pasword);
     if(user){
-      const sessionDurationMinutos = 10;  // Duración de la sesión en minutos
+      const sessionDurationMinutos = 60;  // Duración de la sesión en minutos
       const expireAt = new Date().getTime() + sessionDurationMinutos * 60 * 1000;
 
       localStorage.setItem(this.userKey, JSON.stringify(user));
