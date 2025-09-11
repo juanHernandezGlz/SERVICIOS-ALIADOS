@@ -22,10 +22,10 @@
         <!-- Dropdown Áreas según rol -->
         <li class="nav-item dropdown" *ngIf="authService.hasRole(['admin','nuevos'])">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            AREAS
+            Nuevos Negocios
           </a>
           <ul class="dropdown-menu" style="background-color: #82877e;">
-            <li><a class="dropdown-item" [routerLink]="'nuevo-negocios'" routerLinkActive="active">Nuevo Negocios</a></li>
+            <li><a class="dropdown-item" [routerLink]="'nuevos-negocios'" routerLinkActive="active">Nuevo Negocios</a></li>
           </ul>
         </li>
 
