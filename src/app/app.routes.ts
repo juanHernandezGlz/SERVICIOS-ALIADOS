@@ -7,6 +7,7 @@ import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { authGuard } from './guards/auth.guard';
 import { LoginComponent } from './components/login/login.component';
 import { AdministracionComponent } from './components/administracion/administracion.component';
+import { loginGuard } from './guards/login.guard';
 
 export const routes: Routes = [
     // {path: 'nuevo-negocios', component:NuevosNegociosComponent},
@@ -18,7 +19,7 @@ export const routes: Routes = [
     // {path: '**', redirectTo: 'inicio' }
 
     //LOGIN
-    {path: 'login', component: LoginComponent},
+    {path: 'login', component: LoginComponent, canActivate:[loginGuard]},
 
     //INICIO VISIBLE SOLO SI ESTÁ LOGUEADO
     {path: 'inicio', component: InicioComponent, canActivate: [authGuard]},
