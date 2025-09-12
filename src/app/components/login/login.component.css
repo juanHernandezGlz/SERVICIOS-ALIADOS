@@ -20,6 +20,14 @@ label{
   color: #1A3048;
 }
 
+input{
+  border-color: #1A3048;
+}
+
 h3{
   color: #1A3048;
+}
+
+#togglePasswordButton{
+  border-color: #1A3048;
 }
