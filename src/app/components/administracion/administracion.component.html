@@ -6,7 +6,7 @@
         
             <div class="accordion" id="accordionNuevosNegocios">
         
-                <!-- CONECTIVIDAD Y REDES -->
+                <!-- GESTION -->
                 <div class="accordion-item bg-dark text-white">
                     <h2 class="accordion-header" id="headingOperaciones">
                         <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse"
@@ -22,7 +22,7 @@
                     </div>
                 </div>
         
-                <!-- OBRAS ELECTRICAS -->
+                <!-- ESTADO RESULTADO -->
                 <div class="accordion-item bg-dark text-white">
                     <h2 class="accordion-header" id="headingConectividad">
                         <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse"
@@ -35,6 +35,22 @@
                         <div class="accordion-body p-0">
                             <a class="list-group-item list-group-item-action"
                                 (click)="scrollToSection('mantenciones-emergencia')">EERR GENERAL</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MANTENCIONES -->
+                <div class="accordion-item bg-dark text-white">
+                    <h2 class="accordion-header" id="headingMantenciones">
+                        <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseMantenciones" aria-expanded="false" aria-controls="collapseMantenciones">
+                            <i class="bi bi-gear me-2"></i>MANTENCIONES
+                        </button>
+                    </h2>
+                    <div id="collapseMantenciones" class="accordion-collapse collapse" aria-labelledby="headingMantenciones"
+                        data-bs-parent="#accordionNuevosNegocios">
+                        <div class="accordion-body p-0">
+                            <a class="list-group-item list-group-item-action" (click)="scrollToSection('hc')">MANTENCIONES HC</a>
                         </div>
                     </div>
                 </div>
@@ -63,6 +79,14 @@
                 <P></P>
                 <div>
                     <iframe title="OBRA ELECTRICA (DESCONEXION)- PUBLICAR" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiN2UxMzYyNjMtZTM4YS00ZWNiLWE1M2YtNDRlMmNiZDgyNTQxIiwidCI6IjcwNTlmM2M3LTNkMGUtNDA0OS1iMWNjLTBkMWVhYTg4NTljNCIsImMiOjl9&pageName=097fe97571070d6497bc" frameborder="0" allowFullScreen="true"></iframe>
+                </div>
+            </div>
+            <hr>
+            <div id="hc">
+                <h4>MANTENCIONES HC</h4>
+                <p></p>
+                <div>
+                    <iframe title="MANTENCIONES HC" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiNGMxYTlmOWUtNWY1My00MDU0LTlkYmUtM2QxN2NiMDM0MTkzIiwidCI6IjcwNTlmM2M3LTNkMGUtNDA0OS1iMWNjLTBkMWVhYTg4NTljNCIsImMiOjl9&pageName=719cb98e2150028a7d78" frameborder="0" allowFullScreen="true"></iframe>
                 </div>
             </div>
            
