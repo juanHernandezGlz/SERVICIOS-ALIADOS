@@ -8,6 +8,7 @@ import { authGuard } from './guards/auth.guard';
 import { LoginComponent } from './components/login/login.component';
 import { AdministracionComponent } from './components/administracion/administracion.component';
 import { loginGuard } from './guards/login.guard';
+import { VistaClienteComponent } from './components/vista-cliente/vista-cliente.component';
 
 export const routes: Routes = [
     // {path: 'nuevo-negocios', component:NuevosNegociosComponent},
@@ -32,6 +33,7 @@ export const routes: Routes = [
     {path: 'forestal', component: ForestalComponent, canActivate: [authGuard], data: {roles: ['admin', 'forestal']}},
     {path: 'electrica', component: ElectricaComponent, canActivate: [authGuard], data: {roles: ['admin', 'electrica']}},
     {path: 'admin', component: AdministracionComponent, canActivate: [authGuard], data: {roles: ['admin']}},
+    {path: 'vista-cliente', component: VistaClienteComponent, canActivate: [authGuard], data: {roles:['admin']}},
 
     //REDIRECCIONES
     {path: '', redirectTo: 'inicio', pathMatch: 'full'},
