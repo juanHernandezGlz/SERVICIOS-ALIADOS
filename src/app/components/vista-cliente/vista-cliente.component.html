@@ -1,1 +1,81 @@
-<p>vista-cliente works!</p>
+<div class="container-fluid mt-3">
+    <div class="row">
+        <!-- Menú Lateral -->
+         <nav class="col-12 col-md-2 sidebar-custom mb-3 mb-md-0">
+            <h4 class="text-center text-md-start">Secciones</h4>
+            <div class="accordion" id="accordionVistaCliente">
+                
+                <!-- ELECTRICA -->
+                <div class="accordion-item bg-dark text-white">
+                    <h2 class="accordion-header" id="headingElectrica">
+                        <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseElectrica" aria-expanded="false" aria-controls="collapseElectrica">
+                            <i class="bi bi-lightning-fill me-2"></i>ELECTRICA
+                        </button>
+                    </h2>
+                </div>
+
+                <!-- FORESTAL -->
+                <div class="accordion-item bg-dark text-white">
+                    <h2 class="accordion-header" id="headingForestal">
+                        <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseForestal" aria-expanded="false" aria-controls="collapseForestal">
+                            <i class="bi bi-tree-fill me-2"></i>FORESTAL
+                        </button>
+                    </h2>    
+                </div>
+
+                <!-- NUEVOS NEGOCIOS -->
+                <div class="accordion-item bg-dark text-white">
+                    <h2 class="accordion-header" id="headingNNegocios">
+                        <button class="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNNegocios" aria-expanded="false" aria-controls="collapseNNegocios">
+                            <i class="bi bi-briefcase-fill me-2"></i>NUEVOS NEGOCIOS
+                        </button>
+                    </h2>
+                    <div id="collapseNNegocios" class="accordion-collapse collapse" aria-labelledby="headingNNegocios" data-bs-parent="#accordionVistaCliente">
+                        <div class="accordion-body p-0">
+                            <a class="list-group-item list-group-item-action" (click)="scrollToSection('ftth-cliente')">INSTALACIONES Y REPARACIONES (FTTH)</a>
+                            <a class="list-group-item list-group-item-action" (click)="scrollToSection('tendido')">TENDIDO DE FIBRA</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </nav>
+
+        <!-- Contenido Principal -->
+        <div class="col-12 col-md-10 p-3">
+            <h2>VISTA CLIENTE</h2>
+            <p>
+            </p>
+
+            <hr>
+            <div id="electrica">
+                <h4>ELECTRICA</h4>
+                <p>Contenido de la sección ELECTRICA.</p>
+            </div>
+
+            <hr>
+            <div id="forestal">
+                <h4>FORESTAL</h4>
+                <p>Contenido de la sección FORESTAL.</p>
+            </div>
+
+            <hr>
+            <div id="nuevos-negocios">
+                <h4>NUEVOS NEGOCIOS</h4>
+                <p>Contenido de la sección NUEVOS NEGOCIOS.</p>
+                <div>
+                    <h5>FTTH </h5>
+                    <div id="ftth-cliente">
+                        <iframe title="FTTH - PUBLICAR FINAL VISTA CLIENTE" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiZjZjMzU4ZGUtYThlOC00MzQ3LWJmMWQtODBlNTViZjMyZmRmIiwidCI6IjcwNTlmM2M3LTNkMGUtNDA0OS1iMWNjLTBkMWVhYTg4NTljNCIsImMiOjl9" frameborder="0" allowFullScreen="true"></iframe>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <h5>CONSTRUCCION PLANTA EXTERNA FO</h5>
+                    <div id="tendido">
+                        <iframe title="TENDIDO DE FIBRA - PUBLICAR - FINAL VISTA CLIENTE" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiMjZkYzE2YzMtODY5MS00OTgzLTkwNDgtMmQ5YTcxYTI0ZWY2IiwidCI6IjcwNTlmM2M3LTNkMGUtNDA0OS1iMWNjLTBkMWVhYTg4NTljNCIsImMiOjl9&pageName=b8fef8cb0bd1026e3ac1" frameborder="0" allowFullScreen="true"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

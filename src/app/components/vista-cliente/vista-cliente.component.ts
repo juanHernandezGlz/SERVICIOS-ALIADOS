@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './vista-cliente.component.css'
 })
 export class VistaClienteComponent {
-
+  scrollToSection(id: string) {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }
